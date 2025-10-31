@@ -1,0 +1,94 @@
+body {
+    background: linear-gradient(to right, rgb(40, 119, 255), rgb(74, 1, 74));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.close_btn {
+    background-color: rgba(40, 40, 40, 0.853);
+    border: none;
+}
+dialog {
+    position: fixed;
+    top: 30%;
+    left: 1px;
+    backdrop-filter: blur(3px);
+    transition: 0.1s ease;
+    color: white;
+    text-align: center;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: rgb(54, 52, 52);
+    background-color: rgba(40, 40, 40, 0.853);
+    width: 500px;
+    height: 500px;
+    margin-top: -150px;
+}
+dialog.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    z-index: 1000;
+}
+.footer {
+    border-radius: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    justify-content: space-between;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    padding: 4px;
+    background: linear-gradient(to right, rgba(1, 85, 195, 0.832), rgba(79, 0, 128, 0.666));
+}
+.input1 {
+    background-color: rgba(0, 0, 0, 0.007);
+    border-style: solid;
+    border-width: 1px;
+    padding: 4px;
+    border-radius: 50px;
+    color: azure;
+    text-align: center;
+}
+.search-btn {
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(38, 38, 38);
+    padding: 5px;
+}
+input {
+    color: azure;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: gray;
+    background: linear-gradient(to right, rgba(51, 51, 51, 0), rgba(47, 47, 47, 0));
+    width: 240px;
+    height: 30px;
+}
+a {
+    font-size: 30px;
+    text-decoration: none;
+}
+button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-size: 20px;
+}
+button, h3, h2 {
+    cursor: pointer;
+}
+.list {
+    width: 9px;
+}
+.titlebar {
+    cursor: move;
+    user-select: none;
+}

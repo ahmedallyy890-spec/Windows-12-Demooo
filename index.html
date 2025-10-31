@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 12</title>
+    <link rel="shortcut icon" href="‏‏لقطة الشاشة (245).png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <dialog id="files">
+        <div style="text-align: right; background-color: rgba(40, 40, 40, 0.853); padding: 5px; border-radius: 6px; display: flex;" class="titlebar">
+        <button onclick="files.close()" class="close_btn">✖️</button>
+        <button onclick="toggleScreenFiles()">⬛</button>
+        <p> Files</p>
+        </div>
+        <br>
+        <br>
+        <h3 style="text-align: right;">Windows (C:) 🔐<br>=====--------------</h3>
+        <hr>
+        <div class="list" style="text-align: left;">
+            <h3 style="width: 200px;background-color: rgb(55, 55, 55); padding: 5px; border-radius: 15px;">My PC</h3>
+            <h3>Documents</h3>
+            <h3>Downloads</h3>
+            <hr>
+            <h3>red</h3>
+            <h3>yellow</h3>
+        </div>
+    </dialog>
+    <div class="list">
+        <h3 onclick="files.show()">🖥️</h3>
+        <h3 onclick="files.show()">📁</h3>
+        <h3 onclick="edge.show();">🌐</h3>
+        <h3 onclick="notes.show();">📓</h3>
+        <h3 onclick="open_youtube();">📺</h3>
+    </div>
+    <dialog id="edge">
+        <div style="text-align: right; background-color: rgba(40, 40, 40, 0.853); padding: 5px; border-radius: 6px; display: flex;"  class="titlebar">
+        <button onclick="edge.close()" class="close_btn">✖️</button>
+        <button onclick="toggleScreenEdge()">⬛</button>
+        <p> Bing</p>
+        </div>
+        <br>
+        <br>
+        <h1>Bing</h1>
+        <input type="text" id="input">
+        <button onclick="search()" class="search-btn">🔍</button>
+    </dialog>
+    <dialog id="notes">
+        <div style="text-align: right; background-color: rgba(40, 40, 40, 0.853); padding: 5px; border-radius: 6px; display: flex;" class="titlebar">
+        <button onclick="notes.close()" class="close_btn">✖️</button>
+        <button onclick="toggleScreenNotes()">⬛</button>
+        <p> Notes</p>
+        </div>
+        <br>
+        <br>
+        <h1>Windows 12 Notes</h1>
+        <input type="text" style="border: none; padding: 50px;" placeholder="Type here" class="input1">
+    </dialog>
+    <dialog id="win12">
+        <div style="text-align: right; background-color: rgba(40, 40, 40, 0.853); padding: 5px; border-radius: 6px; display: flex;" class="titlebar">
+        <button onclick="win12.close()" class="close_btn">✖️</button>
+        <p> windows 12</p>
+        </div>
+        <br>
+        <br>
+        <h1>Windows 12 </h1>
+        <h3 onclick="edge.show(); win12.close()">🌐</h3>
+        <h3 onclick="notes.show(); win12.close()">📓</h3>
+        <h3 onclick="open_youtube(); win12.close()">📺</h3>
+        <h3 onclick="open_code(); win12.close()">👨‍💻</h3>
+        <h3 onclick="open_aiModel(); win12.close()">🤖</h3>
+        <a href="shutdown.html">⛔</a>
+    </dialog>
+    <div style="text-align: center;">
+    <img src="‏‏لقطة الشاشة (245).png">
+    </div>
+    <div class="footer">
+        <h3 onclick="show_system_info()">🛜 ⏰ 🔋 🔉</h3>
+        <h3 onclick="edge.show()">🌐</h3>
+        <h3 onclick="notes.show()">📓</h3>
+        <h3 onclick="open_youtube()">📺</h3>
+        <h3 onclick="open_shop()">🛍️</h3>
+        <h3 onclick="open_code()">👨‍💻</h3>
+        <h3 onclick="open_aiModel()">🤖</h3>
+        <br>
+        <div style="margin-top: 10px;">
+        <input type="text">
+        <button>🔍</button>
+        </div>
+        <h3 onclick="win12.show()">🪟</h3>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
